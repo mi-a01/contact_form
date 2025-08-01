@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/run-script', methods=['POST'])
+@app.route('/run-script', methods=['GET'])
 def run_script():
     # 実行したいpython処理
     from selenium import webdriver
