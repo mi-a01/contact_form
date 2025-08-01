@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/run-script', methods=['GET'])
 def run_script():
-    print("ああああてすとあああああ")
+    return "ああああてすとあああああ"
 
     result = {"message": "Pythonスクリプトが実行されました"}
     return jsonify(result)
